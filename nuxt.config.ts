@@ -13,5 +13,12 @@ export default defineNuxtConfig({
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
     configPath: 'tailwind.config',
     viewer: true,
+  },
+  app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: 'https://unpkg.com/maplibre-gl@4.2.0/dist/maplibre-gl.css' }
+      ]
+    }
   }
 })
